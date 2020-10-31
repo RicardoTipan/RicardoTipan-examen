@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RicardoTipan_examen.MainPage">
+
+    <StackLayout>
+
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+               HeightRequest="50" />
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Registro de Estudiantes y Pagos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Ingrese Usuario " FontSize="20" FontAttributes="Bold" TextColor="#070c0f"/>
+        <Entry x:Name="txtUser" Placeholder="Usuario"
+               HorizontalTextAlignment="Start"
+               FlexLayout.AlignSelf="Stretch">
+        </Entry>
+
+        <Label Text="Ingrese Contraseña" FontSize="20" FontAttributes="Bold" TextColor="#070c0f"/>
+        <Entry x:Name="txtPass" Placeholder="Contraseña"
+               IsPassword="True" Keyboard="Default"
+               HorizontalOptions="CenterAndExpand"
+               FlexLayout.AlignSelf="Stretch">
+        </Entry>
+
+
+    </StackLayout>
+
+</ContentPage>
